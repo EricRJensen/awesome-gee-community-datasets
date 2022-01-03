@@ -1,4 +1,4 @@
-# Rangeland Analysis Platform layers
+# Rangeland Analysis Platform Vegetation Cover and Rangeland Production layers
 Rangeland Analysis Platform data products are available as GEE assets and are made publicly available for analysis through the web application at [rangelands.app](https://rangelands.app)
 
 **Vegetation Cover:** Rangeland Analysis Platform (RAP) Vegetation Cover, version 2.0 consists of gridded fractional estimates of plant functional groups for rangelands in the western United States. The estimates are produced at 30-meter spatial resolution for each year between 1984–present. The five plant functional groups are Annual Forbs and Grasses, Perennial Forbs and Grasses, Shrubs, Trees, and Bare Ground. Cover values are reported as percentages on a pixel-by-pixel basis. The estimates were produced using a temporal convolutional network using field measures of plant functional groups collected by the Natural Resources Conservation Service Natural Resources Inventory (NRI) program and the Bureau of Land Management Assessment, Inventory, and Monitoring (AIM) program alongside spatially continuous earth observations from Landsat TM, ETM, and OLI.
@@ -11,10 +11,10 @@ Rangeland Analysis Platform data products are available as GEE assets and are ma
 
 ```js
 // Vegetation Cover
-var RAP_veg = ee.ImageCollection("projects/rangeland-analysis-platform/vegetation-cover-v2")
+var RAP_veg = ee.ImageCollection("projects/rangeland-analysis-platform/vegetation-cover-v3")
 
 // Net Primary Production (annual)
-var RAP_npp = ee.ImageCollection("projects/rangeland-analysis-platform/npp-partitioned-v2")
+var RAP_npp = ee.ImageCollection("projects/rangeland-analysis-platform/npp-partitioned-v3")
 
 ```
 
